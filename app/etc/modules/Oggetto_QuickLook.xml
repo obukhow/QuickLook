@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Oggetto_QuickLook>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Oggetto_QuickLook>
+    </modules>
+</config>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <oggetto_tab module="quicklook" translate="label">
+            <label>Oggetto</label>
+            <sort_order>100</sort_order>
+        </oggetto_tab>
+    </tabs>
+    <sections>
+        <quicklook module="quicklook" translate="label">
+            <label>QuickLook</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>oggetto_tab</tab>
+            <groups>
+                <quicklook_group translate="label">
+                    <label>QuickLook Settings</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <isquicklook translate="label tooltip comment">
+                            <label>Enable QuickLook</label>
+                            <comment>Show or hide QuickLook button in category pages</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>select</frontend_type>
+                            <source_model>attribute/Product_Attribute_Yesno</source_model>
+                        </isquicklook>
+                     </fields>
+                </quicklook_group>
+            </groups>
+        </quicklook>
+    </sections>
+</config>

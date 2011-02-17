@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <quicklook module="quicklook">
+            <title>Oggetto</title>
+            <sort_order>71</sort_order>
+            <children>
+                <items module="quicklook">
+                    <title>QuickLook</title>
+                    <sort_order>0</sort_order>
+                    <action>/system_config/edit/section/quicklook/</action>
+                </items>
+            </children>
+        </quicklook>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <quicklook translate="title" module="quicklook">
+                                        <title>QuickLook</title>
+                                    </quicklook>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+
+</config>
